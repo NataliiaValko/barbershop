@@ -396,48 +396,6 @@
             </section>
         </div>
 
-        <!-- demo-form -->
-
-        <form class="contact-form" name="contacts-form">
-            <label for="name">
-                <span>Name</span>
-                <span>
-                    <input type="text" name="name" id="name" required autofocus>
-                    <!-- <svg>
-                        <use></use>
-                    </svg> -->
-                </span>
-            </label>
-            <label for="phone">
-                <span>Phone</span>
-                <span>
-                    <input type="number" name="phone" id="phone" required>
-                    <!-- <svg>
-                        <use></use>
-                    </svg> -->
-                </span>
-            </label>
-            <label for="email">
-                <span>Email</span>
-                <span>
-                    <input type="email" name="email" id="email">
-                    <!-- <svg>
-                        <use></use>
-                    </svg> -->
-                </span>
-            </label>
-            <label for="comments">
-                <textarea id="comments" rows="15"></textarea>
-            </label>
-            <label for="accept">
-                <input type="checkbox" id="accept" checked required>
-                <span>Соглашаюсь условиями и принимаю</span>
-                <a href="#">Условиями договора</a>
-            </label>
-            <button class="contact-form-button" type="reset">Reset</button>
-            <button class="contact-form-button" type="submit">Send</button>
-
-        </form>
 
 
 
@@ -464,6 +422,83 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+
+
+
+            <!-- demo-form -->
+            <strong class="modal-text">Залиште свої дані, ми вам передзвонимо</strong>
+            <form class="contact-form" name="contacts-form">
+                <label for="name" class="contact-form-field">
+                    <span class="contact-form-label">Name</span>
+                    <span class="contact-form-box">
+                        <input class="contact-form-name" type="text" name="name" id="name" autofocus required
+                            minlength="2" maxlength="25" title="Enter your name with min length 2 symbol">
+                        <svg class="contact-form-icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="phone" class="contact-form-field">
+                    <span class="contact-form-label">Phone</span>
+                    <span class="contact-form-box">
+                        <input class="contact-form-name" type="text" name="pone" id="phone" minlength="2" maxlength="25"
+                            title="Enter your name with min length 2 symbol">
+                        <!-- <svg>
+                        <use></use>
+                    </svg> -->
+                    </span>
+                </label>
+                <!-- <label for="phone">
+                    <span>Phone</span>
+                    <span>
+                        <input type="number" min="10" max="15" name="phone" id="phone" required>
+                        <svg>
+                        <use></use>
+                    </svg>
+                    </span>
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <span>
+                        <input type="email" name="email" id="email">
+                        <svg>
+                        <use></use>
+                    </svg>
+                    </span>
+                </label> -->
+                <label for="age" class="contact-form-field">
+                    <span class="contact-form-label">Age</span>
+                    <span class="contact-form-box">
+                        <input class="contact-form-age" type="range" name="age" id="age" min="18" max="25" step="1"
+                            value="50" title="Enter your name with min length 2 symbol">
+                        <!-- <svg>
+                        <use></use>
+                    </svg> -->
+                    </span>
+                </label>
+
+
+                <label class="contact-form-field" for="comments">
+                    <textarea class="contact-form-comment" id="comments" placeholder="Введіть текст" rows="15"
+                        required></textarea>
+                    <span class="contact-form-label contact-icon-position">Comments*</span>
+                </label>
+                <label class="contact-form-accept" for="accept">
+                    <input class="contact-form-checkbox visually-hidden" type="checkbox" id="accept" required>
+                    <svg class="contact-form-checkbox-icon">
+                        <use class="contact-form-icon-accept" href="./images/sprite.svg#icon-check"></use>
+                        <use class="contact-form-icon-unaccept" href="./images/sprite.svg#icon-vector"></use>
+                    </svg>
+                    <span class="contact-form-text">Соглашаюсь условиями и принимаю</span>
+                    <a class="contact-form-link" href="#">Условиями договора</a>
+                </label>
+                <!-- <button class="contact-form-button" type="reset">Reset</button> -->
+                <button class="contact-form-button" type="submit" disabled>Send</button>
+
+
+
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
