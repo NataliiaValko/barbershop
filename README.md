@@ -5,7 +5,7 @@
   range/number=> min="2" max="10" value="2"
   title="Введите ваше полное имя"
   )
-- Псевдокласы состояния valid/invalid, required/optional, checked, disabled/enabled, in-range/out-of-range
+- Псевдоклассы состояния valid/invalid, required/optional, checked, disabled/enabled, in-range/out-of-range
 
 - Псевдоэлемент ::placeholder и псевдокласс :placeholder-shown
 
