@@ -221,21 +221,28 @@ img {
 	height: 44px;
 	border-radius: 50%;
 	background-color: #ffffff;
+	color: green;
+	transition: color 250ms linear, background-color 250ms linear;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
 	background-color: #000000;
+	color: var(--accent-color);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
 	fill: var(--accent-color);
+	/* color: var(--accent-color); */
 }
 
 .social-list-icon {
 	width: 20px;
 	height: 20px;
+	/* fill: currentColor; */
+	fill: green;
+	transition: fill 250ms linear;
 }
 
 /* ============= END COMPONENTS ============= */
@@ -883,8 +890,54 @@ img {
 
 .contact-form-text {
 	user-select: none;
+	margin-right: 8px;
 }
 .contact-form-link {
 }
 .contact-form-button {
+}
+
+/* animation */
+
+@keyframes rainbow {
+	/* 0% {
+		transform: scale(1) rotateZ(0);
+	}
+	50% {
+		transform: scale(2) rotateZ(180deg);
+	}
+	100% {
+		transform: scale(1) rotateZ(360deg);
+	} */
+
+	0% {
+		color: red;
+	}
+	15% {
+		color: orange;
+	}
+	30% {
+		color: yellow;
+	}
+	45% {
+		color: green;
+	}
+	60% {
+		color: skyblue;
+	}
+	75% {
+		color: blue;
+	}
+
+	100% {
+		color: violet;
+	}
+}
+
+.rotate-scale-up {
+	animation: rotate-scale-up 0.65s linear both;
+}
+
+.rainbow {
+	animation: rainbow 5s 2s linear infinite;
 }
