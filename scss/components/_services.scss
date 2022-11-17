@@ -1,0 +1,39 @@
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.services__modal-btn {
+	display: block;
+	margin: 0 auto;
+}
+
+.services__list {
+	width: 50%;
+	padding: 30px 40px;
+	background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+	&:nth-child(4n - 1),
+	&:nth-child(4n - 2) {
+		background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+	}
+}
+
+.services__item {
+	display: flex;
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+.services__name,
+.services__price {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}

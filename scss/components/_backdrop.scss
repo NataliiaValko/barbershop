@@ -1,0 +1,16 @@
+.backdrop {
+	position: fixed;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 100;
+	transition: opacity var(--trunsition-dur-and-func), visibitity var(--trunsition-dur-and-func);
+}
+.backdrop.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}

@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <nav class="navigation">
                 <a class="logo link" href="">
                     <svg class="logo__img">
@@ -27,7 +28,7 @@
                 </a>
                 <ul class="navigation__list list">
                     <li class="navigation__item">
-                        <a class="navigation__link current link" href="">О нас</a>
+                        <a class="navigation__link navigation__link--current link" href="">О нас</a>
                     </li>
                     <li class="navigation__item">
                         <a class="navigation__link link" href="">Услуги и цены</a>
@@ -48,9 +49,9 @@
     <main>
         <!-- HERO -->
         <section class="hero">
-            <div class="container">
+            <div class="container hero__container">
                 <div class="hero__left-side">
-                    <ul class="social-links list">
+                    <ul class="social-links">
                         <li class="social-links__item">
                             <a class="social-links__link link" href="">Instagram</a>
                         </li>
@@ -62,7 +63,8 @@
                 <div class="hero__right-side">
                     <p class="suptitle suptitle--dark-theme" lang="en">A hair salon for men in Kyiv</p>
                     <h1 class="hero__title rotate-scale-up rainbow" lang="en">BarberShop</h1>
-                    <p class="description description--dark-theme">Мы эксперты в модных мужских стрижках. Работаем
+                    <p class="description hero__description description--dark-theme">Мы эксперты в модных мужских
+                        стрижках. Работаем
                         быстро, осторожно и со
                         вкусом.</p>
                 </div>
@@ -70,7 +72,7 @@
         </section>
         <!-- ABOUT -->
         <section class="about">
-            <div class="container">
+            <div class="container about__container">
                 <div class="about__left-side">
                     <ul class="about__list list">
                         <li class="about__item">
@@ -94,7 +96,7 @@
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
                         Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                    <button class="modal-btn" type="button">онлайн-запись</button>
+                    <button class="modal-btn modal-btn--dark-text" type="button">онлайн-запись</button>
                 </div>
             </div>
         </section>
@@ -146,13 +148,13 @@
                     </ul>
                 </div>
 
-                <button class="modal-btn" type="button">онлайн-запись</button>
+                <button class="modal-btn services__modal-btn" type="button">онлайн-запись</button>
             </div>
         </section>
 
         <!-- ADVANTAGES -->
         <section class="advantages">
-            <div class="container">
+            <div class="container advantages__container">
                 <div class="advantages__left-side">
                     <ul class="advantages__list list">
                         <li class="advantages__item">
@@ -187,7 +189,7 @@
         <!-- MASTERS -->
         <section class="masters">
             <div class="container">
-                <p class="suptitle suptitle--light-theme">для настоящих ценителей атмосферы</p>
+                <p class="suptitle suptitle--light-theme title--mb44">для настоящих ценителей атмосферы</p>
                 <h2 class="title title--light-theme title-mb44">Наши мастера</h2>
                 <ul class="masters__list list">
                     <li class="masters__item">
@@ -314,7 +316,7 @@
         <section class="gallery">
             <div class="container">
                 <h2 class="visually-hidden">Галерея работ</h2>
-                <p class="suptitle suptitle--light-theme">На латинском языке “барба” означает “борода”</p>
+                <p class="suptitle suptitle--light-theme title--mb44">На латинском языке “барба” означает “борода”</p>
                 <ul class="gallery__list list">
                     <li class="gallery__item">
                         <img class="gallery__img" src="./images/gallery/gallery-img-1.jpg" alt="мастер стрижет клиента"
@@ -394,7 +396,7 @@
 
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <p class="copyright" lang="en">&copy; Copyright 2020</p>
             <ul class="social-links list">
                 <li class="social-links__item">

@@ -1,0 +1,18 @@
+body {
+	font-family: var(--main-font);
+}
+body.modal-open {
+	overflow: hidden;
+}
+
+img {
+	display: block;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}
