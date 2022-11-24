@@ -45,7 +45,7 @@
                 <button class="modal-btn" data-modal-open type="button">онлайн-запись</button>
             </div>
 
-            <button class="mobile-menu__open">
+            <button class="mobile-menu__open js-open-menu">
                 <svg class="mobile-menu__icon" width="24" height="16">
                     <use href="./images/sprite.svg#icon-menu"></use>
                 </svg>
@@ -55,7 +55,7 @@
 
     <main>
         <!-- HERO -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero__container">
                 <div class="hero__left-side">
                     <ul class="social-links">
@@ -68,15 +68,15 @@
                     </ul>
                 </div>
                 <div class="hero__right-side">
-                    <p class="suptitle suptitle--dark-theme" lang="en">A hair salon for men in Kyiv</p>
+                    <!-- <p class="suptitle suptitle--dark-theme" lang="en">A hair salon for men in Kyiv</p>
                     <h1 class="hero__title rotate-scale-up rainbow" lang="en">BarberShop</h1>
                     <p class="description hero__description description--dark-theme">Мы эксперты в модных мужских
                         стрижках. Работаем
                         быстро, осторожно и со
-                        вкусом.</p>
+                        вкусом.</p> -->
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- ABOUT -->
         <!-- <section class="about">
             <div class="container about__container">
@@ -194,14 +194,43 @@
         </section>
 
         <!-- MASTERS -->
-        <!-- <section class="masters">
+        <section class="masters">
             <div class="container">
                 <p class="suptitle suptitle--light-theme title--mb44">для настоящих ценителей атмосферы</p>
-                <h2 class="title title--light-theme title-mb44">Наши мастера</h2>
+                <h2 class="title title--light-theme title--mb44">Наши мастера</h2>
                 <ul class="masters__list list">
                     <li class="masters__item">
-                        <img class="masters__img" src="./images/masters/john.jpg" alt="мастер стрижет клиента"
-                            width="370" height="346">
+
+
+
+
+                        <picture>
+                            <source
+                                srcset="./images/masters/masters-1200-1@1x.webp 1x, ./images/masters/masters-1200-1@2x.webp 2x,"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/masters/masters-1200-1@1x.jpg 1x, ./images/masters/masters-1200-1@2x.jpg 2x,"
+                                media="(min-width: 1200px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-768-1@1x.webp 1x, ./images/masters/masters-768-1@2x.webp 2x,"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source
+                                srcset="./images/masters/masters-768-1@1x.jpg 1x, ./images/masters/masters-768-1@2x.jpg 2x,"
+                                media="(min-width: 768px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-480-1@1x.webp 1x, ./images/masters/masters-480-1@2x.webp 2x,"
+                                type="image/webp">
+                            <source
+                                srcset="./images/masters/masters-480-1@1x.jpg 1x, ./images/masters/masters-480-1@2x.jpg 2x,"
+                                type="image/jpg">
+                            <img class="masters__img" src="./images/masters/masters-480-1@1x"
+                                alt="мастер стрижет клиента">
+                        </picture>
+
+
+
+
+
                         <div class="masters__content-wrapper">
                             <h3 class="masters__title" lang="en">John Smith</h3>
                             <p class="masters__position" lang="en">Extreme Barber</p>
@@ -238,8 +267,24 @@
                         </div>
                     </li>
                     <li class="masters__item">
-                        <img class="masters__img" src="./images/masters/michele.jpg" alt="мастер стрижет клиента"
-                            width="370" height="346">
+
+                        <picture>
+                            <source
+                                srcset="./images/masters/masters-1200-2@1x.jpg 1x, ./images/masters/masters-1200-2@2x.jpg 2x,"
+                                media="(min-width: 1200px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-768-2@1x.jpg 1x, ./images/masters/masters-768-2@2x.jpg 2x,"
+                                media="(min-width: 768px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-480-2@1x.jpg 1x, ./images/masters/masters-480-2@2x.jpg 2x,"
+                                type="image/jpg">
+                            <img class="masters__img" src="./images/masters/masters-480-2@1x"
+                                alt="мастер стрижет клиента">
+                        </picture>
+
+
+
+
                         <div class="masters__content-wrapper">
                             <h3 class="masters__title" lang="en">Michele Doe</h3>
                             <p class="masters__position" lang="en">Extreme Barber</p>
@@ -277,8 +322,19 @@
 
                     </li>
                     <li class="masters__item">
-                        <img class="masters__img" src="./images/masters/alan.jpg" alt="мастер стрижет клиента"
-                            width="370" height="346">
+                        <picture>
+                            <source
+                                srcset="./images/masters/masters-1200-3@1x.jpg 1x, ./images/masters/masters-1200-3@2x.jpg 2x,"
+                                media="(min-width: 1200px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-768-3@1x.jpg 1x, ./images/masters/masters-768-3@2x.jpg 2x,"
+                                media="(min-width: 768px)" type="image/jpg">
+                            <source
+                                srcset="./images/masters/masters-480-3@1x.jpg 1x, ./images/masters/masters-480-3@2x.jpg 2x,"
+                                type="image/jpg">
+                            <img class="masters__img" src="./images/masters/masters-480-3@1x"
+                                alt="мастер стрижет клиента">
+                        </picture>
                         <div class="masters__content-wrapper">
                             <h3 class="masters__title" lang="en">Alan Black</h3>
                             <p class="masters__position" lang="en">Extreme Barber</p>
@@ -317,33 +373,52 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- GALLERY -->
-        <!-- <section class="gallery">
+        <section class="gallery">
             <div class="container">
                 <h2 class="visually-hidden">Галерея работ</h2>
                 <p class="suptitle suptitle--light-theme title--mb44">На латинском языке “барба” означает “борода”</p>
                 <ul class="gallery__list list">
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./images/gallery/gallery-img-1.jpg" alt="мастер стрижет клиента"
-                            width="270" height="360">
+                        <img class="gallery__img" src="./images/gallery/gallery-480-1@1x.jpg"
+                            alt="мастер стрижет клиента" srcset="./images/gallery/gallery-480-1@1x.jpg 418w, ./images/gallery/gallery-480-1@2x.jpg 836w,
+                            ./images/gallery/gallery-768-1@1x.jpg 330w, ./images/gallery/gallery-768-1@2x.jpg 660w,
+                            ./images/gallery/gallery-1200-1@1x.jpg 270w, ./images/gallery/gallery-1200-1@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw">
+
+
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./images/gallery/gallery-img-2.jpg" alt="мастер бреет клиента"
-                            width="270" height="360">
+
+                        <img class="gallery__img" src="./images/gallery/gallery-480-2@1x.jpg" alt="мастер бреет клиента"
+                            srcset="./images/gallery/gallery-480-2@1x.jpg 418w, ./images/gallery/gallery-480-2@2x.jpg 836w,
+                                                        ./images/gallery/gallery-768-2@1x.jpg 330w, ./images/gallery/gallery-768-2@2x.jpg 660w,
+                                                        ./images/gallery/gallery-1200-2@1x.jpg 270w, ./images/gallery/gallery-1200-2@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./images/gallery/gallery-img-3.jpg"
-                            alt="мастер распаривает лицо клиенту" width="270" height="360">
+
+                        <img class="gallery__img" src="./images/gallery/gallery-480-3@1x.jpg"
+                            alt="мастер распаривает лицо клиенту"
+                            srcset="./images/gallery/gallery-480-3@1x.jpg 418w, ./images/gallery/gallery-480-3@2x.jpg 836w,
+                                                                                    ./images/gallery/gallery-768-3@1x.jpg 330w, ./images/gallery/gallery-768-3@2x.jpg 660w,
+                                                                                    ./images/gallery/gallery-1200-3@1x.jpg 270w, ./images/gallery/gallery-1200-3@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw">
                     </li>
                     <li class="gallery__item">
-                        <img class="gallery__img" src="./images/gallery/gallery-img-4.jpg" alt="мастер делает окантовку"
-                            width="270" height="360">
+
+                        <img class="gallery__img" src="./images/gallery/gallery-480-4@1x.jpg"
+                            alt="мастер делает окантовку"
+                            srcset="./images/gallery/gallery-480-4@1x.jpg 418w, ./images/gallery/gallery-480-4@2x.jpg 836w,
+                                                                                                                ./images/gallery/gallery-768-4@1x.jpg 330w, ./images/gallery/gallery-768-4@2x.jpg 660w,
+                                                                                                                ./images/gallery/gallery-1200-4@1x.jpg 270w, ./images/gallery/gallery-1200-4@2x.jpg 540w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw">
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <div class="contact-wrapper">
             <!-- CONTACT FORM -->
@@ -501,7 +576,40 @@
 
         </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu__list">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contacts">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+
+        </ul>
+
+        <ul class="mobile-menu__soc-list">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
