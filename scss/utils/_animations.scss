@@ -1,0 +1,42 @@
+@keyframes rainbow {
+	/* 0% {
+		transform: scale(1) rotateZ(0);
+	}
+	50% {
+		transform: scale(2) rotateZ(180deg);
+	}
+	100% {
+		transform: scale(1) rotateZ(360deg);
+	} */
+
+	0% {
+		color: red;
+	}
+	15% {
+		color: orange;
+	}
+	30% {
+		color: yellow;
+	}
+	45% {
+		color: green;
+	}
+	60% {
+		color: skyblue;
+	}
+	75% {
+		color: blue;
+	}
+
+	100% {
+		color: violet;
+	}
+}
+
+.rotate-scale-up {
+	animation: rotate-scale-up 0.65s linear both;
+}
+
+.rainbow {
+	animation: rainbow 5s 2s linear infinite;
+}

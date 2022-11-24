@@ -1,0 +1,45 @@
+.contact-wrapper {
+	display: flex;
+}
+
+.contact-form-section {
+	width: 50%;
+	padding-top: var(--section-pt);
+	padding-bottom: var(--section-pb);
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contact-form-button {
+	width: 200px;
+	height: 50px;
+}
+
+.label-name {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: calc(15 / 11);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: #ffffff;
+}
+
+.contact-information {
+	width: 50%;
+	padding-top: var(--section-pt);
+	padding-bottom: var(--section-pb);
+	padding-left: 100px;
+}
+
+.contact-information__time {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}

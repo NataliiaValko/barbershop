@@ -1,0 +1,20 @@
+body {
+	font-family: var(--main-font);
+}
+body.modal-open {
+	overflow: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}

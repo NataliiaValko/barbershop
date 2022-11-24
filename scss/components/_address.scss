@@ -1,0 +1,16 @@
+.address {
+	font-style: normal;
+	margin-bottom: 70px;
+}
+
+.address__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.address__link {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: #9da4bd;
+}
